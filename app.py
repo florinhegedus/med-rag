@@ -22,7 +22,10 @@ Raspunde la intrebare, bazat pe contextul de mai sus: {question}
 def main():
     load_dotenv()
 
-    st.title("Ajutor pentru REZI")
+    st.set_page_config(page_title="Ajutor pentru REZI",
+                       page_icon=":books:")
+
+    st.title("Ajutor pentru REZI  :books:")
 
     # Prepare the DB.
     embedding_function = get_embedding_function()
